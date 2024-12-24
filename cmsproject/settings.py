@@ -108,14 +108,11 @@ CORS_ALLOWED_ORIGINS = [
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cms',
-        'USER': 'postgres',
-        'PASSWORD': '0000',
-        'HOST': 'localhost',  # Set to 'localhost' for local development
-        'PORT': '5433',        # Default PostgreSQL port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # This will create an SQLite file in your project directory
     }
 }
+
 
 
 # Password validation
